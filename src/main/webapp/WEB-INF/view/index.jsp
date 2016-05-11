@@ -9,6 +9,6 @@
 		<title>Home</title>
 	</head>
 	<body>
-		<h1>Welcome to my First Project.</h1>
+		<h1>Welcome to my Extra credit project.</h1>
 	</body>
 </html>

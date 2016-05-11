@@ -13,10 +13,23 @@ import javax.persistence.ManyToMany;
 public class Director extends Person{
 	
 	//private String directorName;
+	@Id @GeneratedValue
+	private int directorId;
 	
 	@ManyToMany(mappedBy="director",cascade=CascadeType.PERSIST)
 	private List<Movie> movie = new ArrayList<Movie>();
 	
+	
+	public int getDirectorId() {
+		return directorId;
+	}
+
+
+	public void setDirectorId(int directorId) {
+		this.directorId = directorId;
+	}
+
+
 	public Director(String name){
 		super(name);	}
 

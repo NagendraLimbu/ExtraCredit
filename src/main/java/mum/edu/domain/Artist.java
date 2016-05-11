@@ -21,6 +21,8 @@ import java.util.List;
 @Entity
 public class Artist extends Person {
 
+	@Id @GeneratedValue
+	private int id;
 	//@Temporal(TemporalType.DATE)
 	//private String name;
 	private String dateOfBirth;
@@ -42,6 +44,17 @@ public class Artist extends Person {
 		this.biography=biography;
 		this.characterList=characterlist;		
 	}
+
+	
+	public int getId() {
+		return id;
+	}
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 
 	public String getDateOfBirth() {
 		return dateOfBirth;
